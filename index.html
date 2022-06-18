@@ -6,18 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="room">
-        <!--  -->
         <div class="wall wall-z">
             <div class="gharniz_z"></div>
             <div class="left-little-side-block"></div>
             <div class="block-z"></div>
             <div class="back_tv">
-                <div class="tv"></div>
+                <div class="niche"></div>
+                <div class="tv" id="telev">
+                    <div class="tv-power-block"></div>
+                    <figure>
+                        <img src="img/power-button-svgrepo-com.svg" alt="" onclick="power()">
+                    </figure>
+                    <div class="right-block-tv"></div>
+                    <div class="bottom-block-tv"></div>
+                </div>
                 <!-- right speaker -->
                 <div class="right-speaker">
                     <figure>
@@ -45,6 +53,11 @@
             </div>
         </div>
         <div class="wall wall-b">
+            <div class="desk">
+                <div class="desk-leg-l"></div>
+                <div class="desk-leg-r"></div>
+                <div class="desk-leg-b"></div>
+            </div>
             <div class="bottom-block"></div>
             <div class="left-bottom-block"></div>
             <div class="left-bottom-block-top"></div>
@@ -68,5 +81,11 @@
         </div>
     </div>
 </body>
+
+<script>
+    function power() {
+        document.getElementById('telev').style.backgroundImage = "url('img/giloyjuice.gif')"
+    }
+</script>
 
 </html>
